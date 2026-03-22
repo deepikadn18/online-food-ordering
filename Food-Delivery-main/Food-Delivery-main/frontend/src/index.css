@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Theme Variables */
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f8fafc;
+  --text: #1f2937;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --primary: tomato;
+}
+
+.dark {
+  --bg: #0f172a;
+  --bg-soft: #111827;
+  --text: #f9fafb;
+  --card: #1f2937;
+  --muted: #9ca3af;
+  --primary: #ff6b3d;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    var(--bg) 0%,
+    var(--bg) 35%,
+    var(--bg-soft) 100%
+  );
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Main Container */
+.app {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+/* Scrollbar (premium feel) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.5);
+}
+
+/* Smooth fade animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

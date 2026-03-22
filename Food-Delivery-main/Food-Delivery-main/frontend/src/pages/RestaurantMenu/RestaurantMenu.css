@@ -1,0 +1,61 @@
+.restaurant-page {
+  padding-top: 20px;
+}
+
+.restaurant-hero {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 20px 0 10px;
+}
+
+.restaurant-hero-img {
+  width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.restaurant-hero-placeholder {
+  width: 220px;
+  height: 140px;
+  background: #f2f2f2;
+  border-radius: 14px;
+}
+
+.restaurant-hero-info h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.restaurant-hero-info p {
+  margin-top: 6px;
+  color: #666;
+}
+.restaurant-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.restaurant-banner{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  margin-bottom:30px;
+}
+
+.restaurant-banner img{
+  width:120px;
+  height:120px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.restaurant-banner-info h1{
+  font-size:28px;
+  color:#262626;
+}
+
+.restaurant-banner-info p{
+  color:#808080;
+}

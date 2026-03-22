@@ -1,0 +1,28 @@
+import express from "express";
+import { addFood, listFood, listFoodByRestaurant, removeFood } from "../controllers/foodController.js";
+import multer from "multer";
+import authMiddleware from "../middleware/auth.js";
+
+const foodRouter = express.Router();
+
+// Image Storage Engine
+const storage = multer.diskStorage({
+  destination: "uploads",
+  filename: (req, file, cb) => {
+    return cb(null, `${Date.now()}${file.originalname}`);
+  },
+});
+
+const upload = multer({ storage });
+
+foodRouter.post("/add", upload.single("image"), authMiddleware, addFood);
+
+// all foods (admin/debug)
+foodRouter.get("/list", listFood);
+
+// foods by restaurant
+foodRouter.get("/list/:restaurantId", listFoodByRestaurant);
+
+foodRouter.post("/remove", authMiddleware, removeFood);
+
+export default foodRouter;

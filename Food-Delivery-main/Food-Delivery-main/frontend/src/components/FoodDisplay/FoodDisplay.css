@@ -1,0 +1,26 @@
+.food-display {
+  margin: 0 0 60px;
+}
+
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 1050px) {
+  .food-display-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .food-display {
+    margin: 0 0 50px;
+  }
+
+  .food-display-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
