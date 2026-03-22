@@ -29,4 +29,49 @@ A full-stack food delivery web application built using the MERN stack. Users can
 ---
 
 ## 📁 Project Structure
-test
+Yummy-Express/
+├── backend/
+├── frontend/
+├── README.md
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/deepikadn18/online-food-ordering.git
+cd online-food-ordering
+
+2.setup background
+cd backend
+npm install
+npm run server
+
+3.setup frontend
+cd frontend
+npm install
+npm run dev
+
+🌐 Run the Application
+Frontend → http://localhost:5173
+Backend → http://localhost:5000
+
+
+---
+
+## 🧠 Author
+
+**Durga Deepika**  
+GitHub: https://github.com/deepikadn18
+
+---
+
+## 📌 Future Improvements
+
+- Online payment integration
+- Order tracking system
+- Mobile responsiveness improvements
+
+---
